@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "92800df59b3141c62f8187a3df43da7d",
+    "revision": "fb5bb1d47be4968629db8c5171cade97",
     "url": "/restaurant-web/index.html"
   },
   {
-    "revision": "c5b7f225b771b3afe5d5",
+    "revision": "298c8871e58530dab7d7",
     "url": "/restaurant-web/static/css/main.1063b0b0.chunk.css"
   },
   {
@@ -16,24 +16,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/restaurant-web/static/js/2.4263fadc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c5b7f225b771b3afe5d5",
-    "url": "/restaurant-web/static/js/main.6a5537c5.chunk.js"
+    "revision": "298c8871e58530dab7d7",
+    "url": "/restaurant-web/static/js/main.4584102a.chunk.js"
   },
   {
     "revision": "0a60edc1dfa03c0e492d",
     "url": "/restaurant-web/static/js/runtime-main.ebe38fcf.js"
   },
   {
-    "revision": "27253cbebfab05d5496b10b7ae474fc9",
-    "url": "/restaurant-web/static/media/food1.27253cbe.png"
+    "revision": "c4809b5b54c31157f5234eaa5128da1c",
+    "url": "/restaurant-web/static/media/food1.c4809b5b.png"
   },
   {
-    "revision": "b3e3e48a52aa2cce995ad99cbbf09e2d",
-    "url": "/restaurant-web/static/media/food2.b3e3e48a.jpg"
+    "revision": "6908b0a068cb2d658861f0a1e329b9d3",
+    "url": "/restaurant-web/static/media/food2.6908b0a0.jpg"
   },
   {
-    "revision": "eb045dbb13d50bf9975f8da4dbaff1a0",
-    "url": "/restaurant-web/static/media/food3.eb045dbb.jpg"
+    "revision": "f4412513df220c7662a70ad2ffceacf1",
+    "url": "/restaurant-web/static/media/food3.f4412513.jpg"
   },
   {
     "revision": "8a620988654e4bfb20bc3451af7a4a78",
