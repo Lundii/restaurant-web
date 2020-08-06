@@ -37,7 +37,7 @@ const Restaurant = ({match}) => {
   useEffect(() => {
     if(!restaurant){
       setIsLoading(true);
-      fetch(`https://weather-app-backend-123.herokuapp.com/restaurants/${id}`)
+      fetch(`https://weather-app-backend-123.herokuapp.com/api/v1/restaurants/${id}`)
         .then(response => response.json())
         .then(data => {
           setIsLoading(false);
@@ -47,7 +47,7 @@ const Restaurant = ({match}) => {
           setIsLoading(false);
         });
     }
-  }, []);
+  }, [restaurant]);
 
   
   if (isLoading) {

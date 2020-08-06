@@ -21,7 +21,7 @@ const Home = ({history}) => {
   useEffect(() => {
     if(!restaurants){
       setIsLoading(true);
-      fetch('https://weather-app-backend-123.herokuapp.com/restaurants')
+      fetch('https://weather-app-backend-123.herokuapp.com/api/v1/restaurants')
         .then(response => response.json())
         .then(data => {
           setIsLoading(false);

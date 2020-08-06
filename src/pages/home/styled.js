@@ -18,7 +18,7 @@ export const RightImage = styled.div`
 export const Caption = styled.h1`
   text-align: center; 
   padding: 16px;
-  background-color: #008000a8;
+  background-color: #008000;
   border-radius: 4px;
   color: white;
 `
