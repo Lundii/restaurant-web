@@ -25,10 +25,19 @@ const Restaurant = ({match}) => {
     return operatingHours;
   }, [restaurant])
 
+  const foodcards = useMemo(() => {
+    const cards = [];
+    for(let i = 0; i < 20; i++){
+      cards.push(
+        <FoodCard key={i} index={i} />
+      )
+    }
+    return cards;
+  }, [])
   useEffect(() => {
     if(!restaurant){
       setIsLoading(true);
-      fetch(`/restaurants/${id}`)
+      fetch(`https://weather-app-backend-123.herokuapp.com/restaurants/${id}`)
         .then(response => response.json())
         .then(data => {
           setIsLoading(false);
@@ -50,24 +59,13 @@ const Restaurant = ({match}) => {
     <S.Wrapper>
       <div></div>
       <div>
-        <div style={{margin: '48px 0'}}>
+        <S.Details>
           <h1>{name}</h1>
           <p>Opens: {hours.open}</p>
-          <p>Closes:  {hours.close}</p>
-        </div>
+          <p className="close">Closes:  {hours.close}</p>
+        </S.Details>
         <S.CardContainer>
-          <FoodCard />
-          <FoodCard />
-          <FoodCard />
-          <FoodCard />
-          <FoodCard />
-          <FoodCard />
-          <FoodCard />
-          <FoodCard />
-          <FoodCard />
-          <FoodCard />
-          <FoodCard />
-          <FoodCard />
+          {foodcards}
         </S.CardContainer>
       </div>
       <div></div>

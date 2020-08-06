@@ -6,6 +6,18 @@ export const Wrapper = styled.div`
 `
 
 export const CardContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+`
+
+export const Details = styled.div`
+  margin: 48px 0;
+
+  p{
+    font-weigth: 500;
+  }
+  .close {
+    color: red;
+  }
 `

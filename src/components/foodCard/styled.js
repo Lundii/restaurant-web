@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   height: 260px;
   width: 226px;
-  margin-bottom: 16px;
+  margin: 16px 0 0 16px;
 `;
 
 export const Image = styled.img`

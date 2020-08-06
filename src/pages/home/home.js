@@ -13,7 +13,7 @@ const Home = ({history}) => {
     console.log(restaurants);
     return ((restaurants && restaurants.data) || []).map((restaurant, index) => {
       return(
-        <RestaurantCard restaurant={restaurant} history={history} />
+        <RestaurantCard restaurant={restaurant} history={history} key={restaurant.id} />
       )
     })
   }, [restaurants])
@@ -21,7 +21,7 @@ const Home = ({history}) => {
   useEffect(() => {
     if(!restaurants){
       setIsLoading(true);
-      fetch('https://remora.staging.saleswhale.com/restaurants')
+      fetch('https://weather-app-backend-123.herokuapp.com/restaurants')
         .then(response => response.json())
         .then(data => {
           setIsLoading(false);
@@ -43,7 +43,7 @@ const Home = ({history}) => {
     <S.Body>
       <div></div>
       <div style={{marginTop: '24px'}}>
-        <h1 style={{textAlign: 'center', paddingBottom: '32px'}}>Find the Best restaurants in your  locality</h1>
+        <S.Caption>Find the Best restaurants in your  locality</S.Caption>
         <S.Restaurants>
           {getRestaurants}
         </S.Restaurants>
