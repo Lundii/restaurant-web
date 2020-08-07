@@ -4,7 +4,7 @@ import * as S from './styled';
 const Header = () => {
   return (
     <S.Wrapper>
-      <S.Logo to="/restaurant-web">Restaurants</S.Logo>
+      <S.Logo to="/">Restaurants</S.Logo>
     </S.Wrapper>
   )
 }

@@ -7,7 +7,7 @@ const RestaurantCard = ({history, restaurant}) => {
   const {id} = restaurant;
   const {name} = restaurant.attributes;
   const handleClick = () => {
-    history.push(`/restaurant-web/restaurant/${id}`);
+    history.push(`/restaurant/${id}`);
   }
   return (
     <S.Wrapper onClick={handleClick}>

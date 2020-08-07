@@ -10,7 +10,6 @@ const Home = ({history}) => {
   const [isLoading, setIsLoading] = useState();
 
   const getRestaurants = useMemo(() => {
-    console.log(restaurants);
     return ((restaurants && restaurants.data) || []).map((restaurant, index) => {
       return(
         <RestaurantCard restaurant={restaurant} history={history} key={restaurant.id} />

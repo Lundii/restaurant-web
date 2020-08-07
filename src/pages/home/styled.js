@@ -28,9 +28,4 @@ export const Restaurants = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-    
-  // @media screen and (max-width: 480px) {
-  //   display: grid;
-  //   grid-template-columns: 1fr 1fr;
   `

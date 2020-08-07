@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
@@ -10,12 +10,12 @@ import Home from './pages/home';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/">
       <Header />
       <div style={{marginTop: '59px'}}>
         <Switch>
-          <Route exact path="/restaurant-web" component={Home} />
-          <Route path="/restaurant-web/restaurant/:id" component={Restaurant} />
+          <Route exact path="/" component={Home} />
+          <Route path="/restaurant/:id" component={Restaurant} />
         </Switch>
       </div>
     </Router>
